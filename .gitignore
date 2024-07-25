@@ -292,7 +292,7 @@ metadata.json
 *.tmp
 # multiwrite latex
 *.mw
-# .vscode
+.vscode
 .gpg
 ximera-downloads
 .gpgkey
@@ -300,3 +300,4 @@ gpgkey
 .ximeraserve
 
 *.xbb
+
