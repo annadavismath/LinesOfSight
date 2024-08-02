@@ -1,15 +1,16 @@
 \documentclass{ximera}
 \input{../preamble.tex}
 
-\title{Where was Eye? Part I} \license{CC BY-NC-SA 4.0}
+\title{Where was Eye? (part 1)} \license{CC BY-NC-SA 4.0}
 
 \begin{document}
 
 \begin{abstract}
+We determine the location of the camera based on a photograph it took.
 \end{abstract}
 \maketitle
 
-\section*{Where was Eye? Part I}
+\section*{Where was Eye? (part 1)}
 
 \begin{exploration}\label{exp:matchPic}
 Three students, Adam, Benjamin, and Cayla, took part in a photography competition.  All three submitted photos of railroad tracks.  Adam and Benjamin took photos from their natural height; Cayla flew a drone high above her head to take a picture.
@@ -43,17 +44,18 @@ Photo 3 was taken by
     \choice{Cayla}
 \end{multipleChoice}
 
-In small groups, discuss the reasons for your choices.  Do you think it is possible to use these photographs to estimate the height of the camera that took each photo?
+\textbf{Group Discussion Prompt:}
+\emph{Discuss the reasons for your choices.  Do you think it is possible to use these photographs to estimate the height of the camera that took each photo?}
 \end{exploration}
 
 \begin{exploration}\label{exp:trianglesAtBase}
-    Let's look at the three pictures geometrically.  The rails appear to meet at a single point.  
+    Let's look at the three photos geometrically.  
     
 \begin{image}
          \includegraphics[width=5in]{vanishingPoint.jpg}
 \end{image}
     
-    Do you know what this point is called?
+    The rails appear to meet at a single point.  Do you know what this point is called?
     \begin{multipleChoice}
         \choice{Center point}
         \choice[correct]{Vanishing point}
@@ -73,11 +75,12 @@ You might describe the first triangle as tall and narrow, and the second triangl
          \includegraphics[width=3.5in]{matchedTriangles.jpg}
 \end{image}
 
-In groups, discuss the relationship between the height of the camera and the height of the triangles.
+\textbf{Group Discussion Prompt:}
+\emph{In the previous exploration, you figured out who took what photo.  Discuss the relationship between the height of the camera and the height of the triangles.}
 
-\begin{expandable}
+\begin{hint}
     Note that Cayla's triangle (triangle 1) is the tallest, while Adam's triangle (triangle 2) is the shortest.  Recall that Cayla used a drone to take her photo from high above her head.  
-\end{expandable}
+\end{hint}
 
 To see the change in the height of the triangle as the camera height changes, you can use your own phone camera.  Find a long hallway or a long table.  Position your camera in the middle of the hallway (table).  Move the camera up and down observing how the edges of the hallway (table) create taller and shorter triangles, as shown in the photos below.
 
@@ -86,14 +89,14 @@ To see the change in the height of the triangle as the camera height changes, yo
 \end{image}
 
 \begin{multipleChoice}
-        \choice[correct]{As the camera lowers the triangle becomes proportionally shorter.}
+        \choice[correct]{As the camera lowers, the triangle becomes proportionally shorter.}
         \choice{As the camera lowers, the triangle becomes proportionally taller.}
         \choice{As the camera lowers, the triangle's proportions do not change.}
     \end{multipleChoice}
 
 \end{exploration}
 
-So far, we have established that there is a relationship between the proportions of the triangle formed by rails (or edges of a hallway), and the location of the camera that took the photo.  Next, we will look at a photo for which the measurements of the location and the position of the camera are known, and numerically relate the proportions of the triangle to the height of the camera.
+So far, we have established that there is a relationship between the proportions of the triangle formed by rails (or edges of a hallway), and the location of the camera that took the photo.  Next, we will look at a photo for which the measurements of the real-life hallway, and the position of the camera are known.  We will numerically relate the proportions of the triangle to the height of the camera.
 
 \begin{exploration}\label{exp:hallway}
 % In this exploration, we will use a photo 
@@ -114,15 +117,15 @@ The following photo shows a $92$-inch wide hallway.  The photo was taken with th
 Observe that the resulting triangle is nearly isosceles.  We achieved this by placing the camera as close to the middle of the hallway as we could.  
 
 We will now look at the ratio of the height of the triangle to the length of the base.
-$$\frac{\text{height}}{\text{base}}=\frac{1.65}{7.5}=0.22$$
 
 \begin{image}
          \includegraphics[width=4.5in]{triangleMeasures1.jpg}
 \end{image}
 
-\begin{question}
-    Note that our calculations omitted the units.  Do units matter in this case?  If we were to do our measurements using different units, would the ratio still be the same? 
-\end{question} 
+$$\frac{\text{height}}{\text{base}}=\frac{1.65}{7.5}=0.22$$
+
+\textbf{Group Discussion Prompt:}
+    \emph{Note that our calculations omitted units.  Do units matter in this case?  If we were to do our measurements using different units, would the ratio still be the same?} 
 
 Next, we will try to figure out what to do with this ratio to find an estimate for the height of the camera.  To do this, suppose we made four prints of our photo.  The first print is the size of a small poster, the last print is life-sized.  The resulting triangles are clearly of different sizes, but they have the same \emph{proportions}!  Such triangles are called \wordChoice{\choice{congruent} \choice{equilateral} \choice[correct]{similar}\choice{obtuse}}
 
@@ -130,25 +133,21 @@ Next, we will try to figure out what to do with this ratio to find an estimate f
          \includegraphics[width=5in]{similarHallways.jpg}
 \end{image}
 
-%\begin{question}
-    Since the last ''print" in the above graphic is life-sized, and the width of the real-life hallway is $92$ inches, we can conclude that the base of the last triangle is $92$ inches. 
-    Set up and solve a proportion to find the height of the last blue triangle.  
-    $$\frac{1.65}{7.5}=0.22=\frac{\text{height of last triangle in inches}}{\answer{92}\text{in}}$$
-    $$\text{Height of last triangle}=\answer{20.24}$$
+\textbf{Group Discussion Prompt:}
+    \emph{Since the last ''print" in the above graphic is life-sized, and the width of the real-life hallway is $92$ inches, we can conclude that the base of the last triangle is $92$ inches. 
+    Set up and solve a proportion to find the height of the last blue triangle.}  
+    $$\frac{1.65}{7.5}=0.22=\frac{\text{height of last triangle (inches)}}{\answer{92}~\text{in}}$$
+    $$\text{Height of last triangle}=\answer{20.24}~\text{in}$$
 
-    Compare your answer to the height of the camera given at the start of the problem.  The numbers are very close!  Do you think this is a coincidence?  
-%\end{question}
+   \emph{Compare your answer to the height of the camera given at the start of the problem.  The numbers are very close!  Do you think this is a coincidence?}  
 
-%\begin{question}
-    The height of the camera above the floor was given to be $20$ inches, but the computed height of the triangle was not exactly $20$.  What do you think accounts for the difference?
-%\end{question}
-
-%\begin{question}
-    Formulate a rule for finding the height of the camera for photos with the same set up.  How would you verify that your rule works for all such photos?  Discuss this with your classmates and your teacher.
-%\end{question}
+\textbf{Group Discussion Prompt:}
+    \emph{Formulate a rule for finding the height of the camera for photos with the same set up.  How would you verify that your rule works for ALL such photos?  Discuss this with your classmates and your teacher.}
+    
+\textbf{Group Discussion Prompt:}
+    \emph{The rule you stated in the previous discussion question is a theoretical rule.  In practice, the height of the camera above the floor was given to be $20$ inches, but the computed height of the triangle was not exactly $20$.  What do you think accounts for the difference?}  
 \end{exploration}
 
-
-
+In the next two parts of this activity, you will get to perform a photo experiment yourself, and develop the theoretical underpinnings of the rule you discovered here.
 
 \end{document}
